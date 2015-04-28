@@ -1,3 +1,69 @@
+
+
+#food-list {
+  color: white;
+  float: left;
+  font-family: 'Droid Serif', serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 20px;
+  line-height: 23px;
+  margin: 0 0 23px 0;
+}
+
+#party-list {
+  color: white;
+ float: left;
+ font-family: 'Droid Serif', serif;
+ font-weight: 400;
+ font-style: italic;
+ font-size: 20px;
+ line-height: 23px;
+ margin: 0 0 23px 0;
+}
+
+#order-list {
+  color: white;
+  float: left;
+  font-family: 'Droid Serif', serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 20px;
+  line-height: 23px;
+  margin: 0 0 23px 0;
+}
+
 body {
-  background-color: pink;
+    color: white;
+    background-image: url(http://i.imgur.com/Vy8xCfE.jpg?1);
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    line-height: 51px;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 0 0 23px 0;
+    }
+h2 {
+    color: white;
+    font-family: 'Droid Serif', serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 23px;
+    margin: 0 0 23px 0;
+    }
+p {
+    color: white;
+    font-family: 'Droid Serif', serif;
+    font-size: 15px;
+    line-height: 23px;
+    margin: 0 0 23px 0;
+    }
+
+#link {
+  color: white;
+  font-family: 'Droid Serif', serif;
+  font-size: 15px;
+  line-height: 23px;
+  margin: 0 0 23px 0;
 }

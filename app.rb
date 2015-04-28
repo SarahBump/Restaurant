@@ -18,14 +18,14 @@ end
 
 get '/api/foods' do
   content_type :json
-  food = Food.all
-  food.to_json
+  foods = Food.all
+  foods.to_json
 end
 
 
 get '/api/foods/:id' do
   content_type :json
-  food = Food.find(params[:id].to_i)
+  food = Food.find(params[:id])
   food.to_json
 end
 
@@ -82,12 +82,14 @@ patch '/api/orders/:id' do
   content_type :json
   order = Order.find(params[:id].to_i)
   order.update(params[:order])
+  order.to_json
 end
 
 put '/api/orders/:id' do
   content_type :json
   order = Order.find(params[:id].to_i)
   order.update(params[:order])
+  order.to_json
 end
 
 delete '/api/orders/:id' do
@@ -139,3 +141,12 @@ delete '/api/parties/:id' do
   party = Party.find(params[:id].to_i)
   party.destroy
 end
+
+# get '/api/parties/:id/receipt' do
+#   content_type :json
+#   XXXX
+# end
+#
+# patch '/api/parties/:id/checkout' do
+#   content_type :json
+#   XXXXX
