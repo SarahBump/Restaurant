@@ -1,3 +1,23 @@
+header {
+  margin: 30px;
+  background-color: rgba(106, 133, 58, 0.55);
+  border-radius: 5px;
+}
+
+h1 {
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+
+}
+h2 {
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+
+    }
 
 
 #food-list {
@@ -13,13 +33,13 @@
 
 #party-list {
   color: white;
- float: left;
- font-family: 'Droid Serif', serif;
- font-weight: 400;
- font-style: italic;
- font-size: 20px;
- line-height: 23px;
- margin: 0 0 23px 0;
+  float: left;
+  font-family: 'Droid Serif', serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 20px;
+  line-height: 23px;
+  margin: 0 0 23px 0;
 }
 
 #order-list {
@@ -36,29 +56,8 @@
 body {
     color: white;
     background-image: url(http://i.imgur.com/Vy8xCfE.jpg?1);
-    font-family: 'Oswald', sans-serif;
-    font-weight: 700;
-    line-height: 51px;
-    font-size: 20px;
-    text-transform: uppercase;
-    margin: 0 0 23px 0;
     }
-h2 {
-    color: white;
-    font-family: 'Droid Serif', serif;
-    font-weight: 400;
-    font-style: italic;
-    font-size: 20px;
-    line-height: 23px;
-    margin: 0 0 23px 0;
-    }
-p {
-    color: white;
-    font-family: 'Droid Serif', serif;
-    font-size: 15px;
-    line-height: 23px;
-    margin: 0 0 23px 0;
-    }
+
 
 #link {
   color: white;
@@ -66,4 +65,11 @@ p {
   font-size: 15px;
   line-height: 23px;
   margin: 0 0 23px 0;
+
+}
+
+footer {
+  display: block;
+  width: 100%;
+  clear: both;
 }
