@@ -14,20 +14,20 @@ class PartiesController < Sinatra::Base
   get '/' do
     content_type :json
     party = Party.all
-    party.to_json
+    party.to_json(include: :foods)
   end
 
 
   get '/:id' do
     content_type :json
     party = Party.find(params[:id].to_i)
-    party.to_json
+    party.to_json(include: :foods)
   end
 
   post '/' do
     content_type :json
     newParty = Party.create(params[:party])
-    newParty.to_json
+    newParty.to_json(include: :foods)
   end
 
   patch '/:id' do

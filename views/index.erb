@@ -14,12 +14,14 @@
 
 
     <ul id='food-list'>
-    <ul>Food</ul>
+    Food
     </ul>
 
     <ul id='order-list'>
-    <ul>Orders</ul>
-    </ul>
+    Orders
+  </ul>
+
+  <button type="button" id="place-order">Order</button>
 
     <ul id='party-list'>
     <ul>Parties</ul>
@@ -28,10 +30,32 @@
     <a id='link' href="/admin">Click here to login</a>
   </footer>
 
-    <script charset="utf-8" src='/javascripts/lib/jquery.js'></script>
-    <script charset="utf-8" src='/javascripts/lib/underscore.js'></script>
-    <script charset="utf-8" src='/javascripts/lib/backbone.js'></script>
-    <script charset="utf-8" src='/javascripts/app.js'></script>
+
+    <!-- ****** JS Libraries ****** -->
+      <script src='/javascripts/lib/jquery.js'></script>
+      <script src='/javascripts/lib/underscore.js'></script>
+      <script src='/javascripts/lib/backbone.js'></script>
+
+      <!-- ****** Backbone Models ****** -->
+      <script src='/javascripts/models/FoodModel.js'></script>
+      <script src='/javascripts/models/PartyModel.js'></script>
+      <script src='/javascripts/models/OrderModel.js'></script>
+
+      <!-- ****** Backbone Collection ****** -->
+      <script src='/javascripts/collections/FoodCollection.js'></script>
+      <script src='/javascripts/collections/PartyCollection.js'></script>
+      <script src='/javascripts/collections/OrderCollection.js'></script>
+
+      <!-- ****** Backbone Views ****** -->
+      <script src='/javascripts/views/FoodView.js'></script>
+      <script src='/javascripts/views/PartyView.js'></script>
+      <script src='/javascripts/views/OrderView.js'></script>
+      <script src='/javascripts/views/FoodListView.js'></script>
+      <script src='/javascripts/views/PartyListView.js'></script>
+      <script src='/javascripts/views/OrderListView.js'></script>
+
+      <!-- ****** JS Application ****** -->
+      <script src='/javascripts/app.js'></script>
 
   </body>
 </html>
