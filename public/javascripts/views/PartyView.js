@@ -1,9 +1,9 @@
 var app = app || {};
 
 app.PartyView = Backbone.View.extend({
-  tagName: "h2",
+  tagName: "li",
   className: "parties",
-  template: _.template("<%= name %>:<span> $<%= count %></span><button class='select-party'>Select</button>"),
+  template: _.template("<h3><%= name %>:$<%= count %></h3><button class='select-party'>Select</button>"),
   initialize: function() {
     this.render();
   },

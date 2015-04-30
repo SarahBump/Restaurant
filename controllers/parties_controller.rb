@@ -1,5 +1,6 @@
 class PartiesController < Sinatra::Base
   enable  :sessions
+  require 'date'
 
   # ***** Helpers *****
   def party_params
@@ -46,6 +47,22 @@ class PartiesController < Sinatra::Base
     content_type :json
     party = Party.find(params[:id].to_i)
     party.destroy
+  end
+
+  get '/:id/receipt' do
+    party = Party.find(params[:id].to_i)
+
+    total = 0
+    party.foods.each {|food| total += food.cost }
+
+    name = party.name.to_s
+    date = Date.today.to_s
+    id = party.id.to_s
+    text = "Name: #{name} \nDate: #{date} \nTotal: #{total} \nThanks for Coming!"
+    file =  './public/receipts/' + id + ".txt"
+    File.write(file, text)
+    content_type :json
+    party.to_json
   end
 
 end
