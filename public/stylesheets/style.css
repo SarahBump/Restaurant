@@ -16,11 +16,16 @@ h2 {
   color: white;
   font-family: 'Oswald', sans-serif;
   font-size: 20px;
-  float: center;
 
     }
 
-
+#place-order {
+  color:black;
+  background: #ADD8E6;
+  width: 140px;
+  height: 70px;
+  font-size: 24;
+}
 
 
 body {
@@ -31,12 +36,9 @@ body {
 #food-container{
   width: 50%;
   float: left;
-  overflow: auto;
+
 }
 
-#food-container h2{
-  text-align: center;
-}
 
 ul {
   list-style: none;
@@ -44,8 +46,12 @@ ul {
 }
 
 li {
-  width: 10%;
+  width: 40%;
   margin: 0 auto 25px;
+  background-color: rgba(255,231,77,0.5);
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
 }
 
 
